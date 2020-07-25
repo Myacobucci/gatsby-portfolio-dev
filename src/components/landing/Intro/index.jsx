@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { ThemeContext } from 'providers/ThemeProvider';
+import Img from 'gatsby-image';
 import { Header } from 'components/theme';
-import { Container, Button } from 'components/common';
-import dev from 'assets/illustrations/dev.svg';
+import { Container } from 'components/common';
+import maxiPhoto from '../../../assets/images/maxi.png';
 import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
 
 export const Intro = () => {
@@ -18,7 +18,7 @@ export const Intro = () => {
           <h4>I’m Maximiliano Yacobucci and I’m a Software Engineer!</h4>
         </Details>
         <Thumbnail>
-          <img src={dev} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" />
+          {/* <img src={maxiPhoto} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" /> */}
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>

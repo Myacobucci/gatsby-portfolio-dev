@@ -1,5 +1,7 @@
 const config = require('./src/data/config');
 
+const path = require(`path`);
+
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -68,7 +70,14 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: './static/favicon/favicon-512.png',
+        icon: './static/favicon/favicon.png',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `assets/images`),
       },
     },
     'gatsby-plugin-offline',
