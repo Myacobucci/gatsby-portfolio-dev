@@ -16,9 +16,6 @@ export const Intro = () => {
         <Details theme={theme}>
           <h1>Hi There!</h1>
           <h4>I’m Maximiliano Yacobucci and I’m a Software Engineer!</h4>
-          <Button as={AnchorLink} href="#contact">
-            Hire me
-          </Button>
         </Details>
         <Thumbnail>
           <img src={dev} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" />
