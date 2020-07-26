@@ -69,3 +69,22 @@ export const Thumbnail = styled.div`
     width: 50%;
   }
 `;
+
+export const Links = styled.div`
+  display: flex;
+  align-items: center;
+
+  a {
+    margin: 0 0.5rem;
+
+    img {
+      width: 78px;
+      margin: 0;
+    }
+
+    &:first-child,
+    &:last-child {
+      margin: 0;
+    }
+  }
+`;

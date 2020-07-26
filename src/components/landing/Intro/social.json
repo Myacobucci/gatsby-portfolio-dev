@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Linkedin",
+    "link": "https://www.linkedin.com/in/m-yacobucci/",
+    "icon": "/icons/linkedin.svg"
+  },
+  {
+    "id": 1,
+    "name": "Github",
+    "link": "https://github.com/Myacobucci",
+    "icon": "/icons/github.svg"
+  },
+  {
+    "id": 2,
+    "name": "Email",
+    "link": "mailto:maxyacobucci@gmail.com",
+    "icon": "/icons/email.svg"
+  }
+]
