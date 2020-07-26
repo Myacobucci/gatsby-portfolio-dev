@@ -62,11 +62,14 @@ export const Thumbnail = styled.div`
 
   @media (max-width: 960px) {
     width: 100%;
+    margin-left: 0;
+  }
+  @media (min-width: 960px) {
+    margin-left: 100px;
   }
 
   img {
     width: 70%;
-    margin-left: 100px;
   }
 `;
 
