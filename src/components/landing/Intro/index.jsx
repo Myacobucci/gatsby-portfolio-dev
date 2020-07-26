@@ -26,7 +26,7 @@ export const Intro = () => {
           </Links>
         </Details>
         <Thumbnail>
-          {/* <img src={maxiPhoto} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" /> */}
+          <img src={maxiPhoto} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" />
         </Thumbnail>
       </IntroWrapper>
     </Wrapper>
