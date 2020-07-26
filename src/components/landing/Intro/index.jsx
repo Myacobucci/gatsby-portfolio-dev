@@ -4,14 +4,14 @@ import Img from 'gatsby-image';
 import { Header } from 'components/theme';
 import { Container } from 'components/common';
 import maxiPhoto from '../../../assets/images/maxi.png';
-import { Wrapper, IntroWrapper, Details, Thumbnail, Links } from './styles';
+import { IntroWrapper, Details, Thumbnail, Links } from './styles';
 import social from './social.json';
 
 export const Intro = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper>
+    <>
       <Header />
       <IntroWrapper as={Container}>
         <Details theme={theme}>
@@ -29,6 +29,6 @@ export const Intro = () => {
           <img src={maxiPhoto} alt="I’m Maximiliano Yacobucci and I’m a Software Engineer!" />
         </Thumbnail>
       </IntroWrapper>
-    </Wrapper>
+    </>
   );
 };
