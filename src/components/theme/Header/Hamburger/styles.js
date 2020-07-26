@@ -42,29 +42,31 @@ export const Bar = styled.div`
 
 	@media (max-width: 600px){
 		width: 1.6rem;
+		${({ theme }) => `background-color: ${theme === 'light' ? '#212121' : '#fff'};`}
 	}
 
 	${({ top, sidebar, theme }) =>
     top &&
     sidebar &&
-		`
-		background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+		background-color: ${theme === 'light' ? '#212121' : '#fff'};
 		transform: translateY(8px) rotate(-135deg);
 		
 	`}
 
-	${({ mid, sidebar }) =>
+	${({ mid, sidebar, theme }) =>
     mid &&
     sidebar &&
-		`
+    `
+		background-color: ${theme === 'light' ? '#212121' : '#fff'};
 		transform: scale(0);
 		`}
 
 	${({ bottom, sidebar, theme }) =>
     bottom &&
     sidebar &&
-		`
-			background-color: ${(theme === 'light' ? '#212121' : '#fff')};
+    `
+			background-color: ${theme === 'light' ? '#212121' : '#fff'};
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `;
